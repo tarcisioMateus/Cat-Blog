@@ -17,47 +17,56 @@
   <div id="page">
 
     <nav>
-      <button type="button">
-        <img src="./assets/paw.svg" alt="menu button">
-      </button>
 
-      <form>
-        <div class="input-wrapper">
-          <label for="search for articles">search for articles</label>
-          <input type="text" name="search for articles" id="search for articles" placeholder="search for articles">
-        </div>
-      </form>
-      
+      <div class="container">
         <button type="button">
-          <img src="https://randomuser.me/api/portraits/women/13.jpg" alt="profile">
+          <img src="./assets/paw.svg" alt="menu button">
         </button>
+  
+        <form>
+          <div class="input-wrapper">
+            <label for="search for articles" class="sr-only">search for articles</label>
+            <input type="text" name="search for articles" id="search for articles" placeholder="search for articles">
+          </div>
+        </form>
+        
+          <button type="button">
+            <img src="https://randomuser.me/api/portraits/women/13.jpg" alt="profile">
+          </button>
+      </div>
 
     </nav>
 
     <main>
       <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=843&q=80" 
       alt="a black and white cat looking straight to you">
-      <h1>Could it be astronaut cats?</h1>
 
-      <div class="like">
-        <button class="up">
-          <img src="./assets/up.svg" alt="thumb's up">
-        </button>
-        <button class="down">
-          <img src="./assets/down.svg" alt="thumb's down">
-        </button>
+      <div class="container">
+
+        <h1>Could it be astronaut cats?</h1>
+  
+        <div class="like">
+          <button class="up">
+            <img src="./assets/up.svg" alt="thumb's up">
+          </button>
+          <button class="down">
+            <img src="./assets/down.svg" alt="thumb's down">
+          </button>
+        </div>
+  
+        <p>
+          Cats are fascinating animals and surrounded by mysteries. With an independent and mysterious temperament, these felines are known for their agility, elegance and often unpredictable behavior. However, recently, a theory has gained ground on the internet and among conspiracy theorists: are cats astronauts?
+          <br>
+          The theory suggests that cats are not terrestrial animals, but extraterrestrial beings sent to carry out a specific mission on our planet. There are historical accounts that point to the fact that cats were considered sacred beings in different cultures and even associated with divine figures. This could indicate that cats have a much more mystical origin than previously thought.
+          <br><br>
+          Furthermore, there are theorists who believe that felines possess telepathic abilities and are able to communicate with other alien species. This belief is based on reports of people claiming to have seen cats reacting to stimuli that are not perceptible to humans, or even behaving unusually during astronomical events, such as an aurora borealis. These and other clues were interpreted as signs that cats were interplanetary beings.
+        </p>
+
       </div>
 
-      <p>
-        Cats are fascinating animals and surrounded by mysteries. With an independent and mysterious temperament, these felines are known for their agility, elegance and often unpredictable behavior. However, recently, a theory has gained ground on the internet and among conspiracy theorists: are cats astronauts?
-        <br>
-        The theory suggests that cats are not terrestrial animals, but extraterrestrial beings sent to carry out a specific mission on our planet. There are historical accounts that point to the fact that cats were considered sacred beings in different cultures and even associated with divine figures. This could indicate that cats have a much more mystical origin than previously thought.
-        <br><br>
-        Furthermore, there are theorists who believe that felines possess telepathic abilities and are able to communicate with other alien species. This belief is based on reports of people claiming to have seen cats reacting to stimuli that are not perceptible to humans, or even behaving unusually during astronomical events, such as an aurora borealis. These and other clues were interpreted as signs that cats were interplanetary beings.
-      </p>
     </main>
 
-    <aside>
+    <aside class="container">
       <h2>related articles</h2>
 
       <article tabindex="0">
@@ -89,7 +98,9 @@
       </article>
     </aside>
 
-    <footer>© 2023 - Rocketseat Explorer</footer>
+    <footer>
+      <p class="container">© 2023 - Rocketseat Explorer</p>
+    </footer>
   </div>
 </body>
 </html>

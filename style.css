@@ -7,9 +7,38 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.input-wrapper {
+  position: relative;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 button {
   border: 0;
+  border-radius: 50% 50%;
+  overflow: hidden;
   background-color: transparent;
+  
+  transition: all 500ms;
+}
+button:hover,
+button:focus {
+  transform: scale(1.1);
+  filter: contrast(1.1);
+}
+
+img {
+  object-fit: cover;
+  width: inherit;
+  height: inherit;
 }
 
 :root {
@@ -21,4 +50,27 @@ button {
   --color-2nd-light: hsla(0, 0%, 100%, 20%);
   --fc-h: #202024;
   --fc: #121214;
+}
+
+#page {
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+}
+.container {
+  padding: 1.6rem 2.8rem;
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+  gap: 2.6rem;
+}
+
+nav form {
+  flex: 1;
+}
+
+nav button {
+  width: 4.2rem;
+  height: 4.2rem;
 }
