@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: 'Mulish', sans-serif;
+
+  --color-1st: #387E96;
+  --color-2nd: #FFFFFF;
+  --color-2nd-light: hsla(0, 0%, 100%, 20%);
+  --fc-h: #202024;
+  --fc: #121214;
+}
