@@ -35,12 +35,25 @@ button:focus {
   filter: contrast(1.1);
 }
 
-img {
+nav img {
   object-fit: cover;
   width: inherit;
   height: inherit;
 }
+img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
 
+p {
+  color: var(--fc);
+  line-height: 160%;
+}
+h1, h2, h3 {
+  color: var(--fc-h);
+  line-height: 160%;
+}
 :root {
   font-size: 62.5%;
   font-family: 'Mulish', sans-serif;
@@ -55,22 +68,100 @@ img {
 #page {
   display: grid;
   grid-template-rows: max-content 1fr max-content;
+  height: 100vh;
+  background-color: var(--color-1st);
 }
 .container {
   padding: 1.6rem 2.8rem;
 }
+
 
 nav .container {
   display: flex;
   align-items: center;
   gap: 2.6rem;
 }
-
 nav form {
   flex: 1;
 }
-
+nav input {
+  width: 100%;
+  background-color: var(--color-2nd-light);
+  border: 0;
+  border-radius: .4rem;
+  padding: 1.2rem 1.4rem;
+}
+nav input,
+nav input::placeholder {
+  font-size: 1.6rem;
+  color: var(--color-2nd);
+}
 nav button {
   width: 4.2rem;
   height: 4.2rem;
+}
+
+
+main {
+  overflow-y: auto;
+  background-color: var(--color-2nd);
+}
+
+section > img {
+  height: 40vh;
+}
+section h1 {
+  font-size: 2.4rem;
+  padding-bottom: .8rem;
+}
+section .like{
+  display: flex;
+  gap: 1.2rem;
+}
+section p {
+  font-size: 1.6rem;
+  padding-top: 3.2rem;
+}
+
+aside {
+  margin-bottom: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+aside h2 {
+  font-size: 2.4rem;
+}
+aside article {
+  display: grid;
+  grid-template-areas: 
+  "i h"
+  "i p";
+  grid-template-rows: min-content min-content;
+  height: 8.4rem;
+  width: 38.2rem;
+}
+aside article img {
+  grid-area: i;
+  padding-right: 1.6rem;
+  height: 8.4rem;
+  width: 15rem;
+}
+aside article h3 {
+  grid-area: h;
+  font-size: 1.8rem;
+  padding-bottom: 1.3rem;
+}
+aside article p {
+  grid-area: p;
+  font-size: 1.4rem;
+}
+
+
+
+footer {
+  background-color: var(--color-2nd-light);
+  color: var(--color-2nd);
+  text-align: center;
+  font-size: 1.6rem;
 }
