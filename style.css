@@ -83,6 +83,9 @@ nav .container {
   display: flex;
   align-items: center;
   gap: 2.6rem;
+
+  --y-start: -100%;
+  animation: moveY 400ms ease-out 100ms reverse backwards;
 }
 nav form {
   flex: 1;
@@ -109,10 +112,15 @@ nav button {
 main {
   overflow-y: auto;
   background-color: var(--color-2nd);
+  --x-start: 100%;
+  animation: moveX 500ms ease-out 500ms reverse backwards;
 }
 
 section > img {
   height: 40vh;
+
+  --x-start: -200%;
+  animation: moveX 800ms ease-out 500ms reverse backwards;
 }
 section h1 {
   font-size: 2.4rem;
@@ -167,6 +175,9 @@ aside article p {
 footer {
   background-color: var(--color-2nd-light);
   text-align: center;
+
+  --y-start: 100%;
+  animation: moveY 400ms ease-out 100ms reverse backwards;
 }
 footer p {
   color: var(--color-2nd);
@@ -174,6 +185,19 @@ footer p {
 }
 
 
+
+@keyframes moveY {
+  100% {
+    transform: translateY(var(--y-start) );
+    opacity: 0;
+  }
+}
+@keyframes moveX {
+  100% {
+    transform: translateX(var(--x-start) );
+    opacity: 0;
+  }
+}
 
 @media (min-width: 750px) {
   main {
@@ -187,6 +211,7 @@ footer p {
     margin-top: 2.8rem;
     border-radius: 10%;
     overflow: hidden;
+    height: 60vh;
   }
   section .text {
     display: grid;  
